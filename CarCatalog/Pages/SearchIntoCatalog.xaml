@@ -1,0 +1,129 @@
+﻿<Page x:Class="CarCatalog.Pages.SearchIntoCatalog"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarCatalog.Pages"
+      mc:Ignorable="d" 
+      Title="SearchIntoCatalog">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+            
+        <Border Grid.Row="0" Grid.Column="0">
+            <Image Grid.Column="0" x:Name="Logotype" ></Image>
+        </Border>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="0, 0, 5, 10" VerticalAlignment="Bottom">
+            <Border BorderBrush="Black" Margin="10, 0" BorderThickness="1" CornerRadius="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Height="45" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#F4F5F4">
+                        <Label Margin="5, 10, 0, 0" VerticalAlignment="Center" FontSize="14" FontFamily="Arial">Поиск автомобиля по VIN</Label>
+                    </StackPanel>
+                    <StackPanel Height="45" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                        <Label Margin="0, 17, 0, 0" FontSize="14" FontFamily="Arial">Введите VIN (17 знаков), например: JTMHT05J505044090</Label>
+                    </StackPanel>
+                    <WrapPanel Height="45" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                        <TextBox Margin="10, 0, 0, 0" Padding="5, 6, 0, 0" FontFamily="Verdana" FontSize="12" Foreground="LightGray" Height="30" Width="280">JTMHT05J505044090</TextBox>
+                        <Button Width="60" Margin="3, 0, 0, 0" FontFamily="verdana" FontSize="12" Background="White">Найти</Button>
+                    </WrapPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Margin="0, 0, 5, 10" VerticalAlignment="Bottom">
+        <Border BorderBrush="Black" Margin="10, 0" BorderThickness="1" CornerRadius="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                    <StackPanel Height="45" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#F4F5F4">
+                        <Label Margin="5, 10, 0, 0" VerticalAlignment="Center" FontSize="14" FontFamily="Arial">Поиск автомобиля по кузову</Label>
+                    </StackPanel>
+                    <StackPanel Height="45" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                        <Label Margin="0, 17, 0, 0" FontSize="14" FontFamily="Arial">Введите код и номер кузова, например: CK2A-0403374;</Label>
+                    </StackPanel>
+                    <WrapPanel Height="45" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                        <TextBox Margin="10, 0, 0, 0" Padding="5, 6, 0, 0" FontFamily="Verdana" FontSize="12" Foreground="LightGray" Height="30" Width="135">CK2A</TextBox>
+                        <Label>-</Label>
+                        <TextBox Margin="0, 0, 0, 0" Padding="5, 6, 0, 0" FontFamily="Verdana" FontSize="12" Foreground="LightGray" Height="30" Width="135">0403374</TextBox>
+                        <Button Width="60" Margin="3, 0, 0, 0" FontFamily="verdana" FontSize="12" Background="White">Найти</Button>
+                    </WrapPanel>
+            </Grid>
+        </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="0, 10, 5, 0" VerticalAlignment="Stretch">
+            <Border BorderBrush="Black" Margin="10, 0" BorderThickness="1" CornerRadius="5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Height="45" Grid.Row="0" Background="#F4F5F4">
+                        <Label Margin="5, 10, 0, 0" VerticalAlignment="Center"
+                               FontSize="14" FontFamily="Arial">Идентификация автомобиля по параметрам</Label>
+                    </StackPanel>
+                    <WrapPanel  Grid.Row="1" Height="45" Margin="0,25,0,5">
+                        <TextBox Margin="15, 0, 0, 0" Padding="5, 6, 0, 0" FontFamily="Verdana"
+                                 FontSize="14" Background="White" Height="30" Width="330" >Семейство</TextBox>
+                        <ComboBox Margin="-1, 0, 0, 0" Background="White">
+                            <TextBlock></TextBlock>
+                            <TextBlock></TextBlock>
+                        </ComboBox>
+                    </WrapPanel>
+                    <WrapPanel  Grid.Row="2" Height="45" Margin="0,10,0,5">
+                        <TextBox Margin="15, 0, 0, 0" Padding="5, 6, 0, 0" FontFamily="Verdana" 
+                                 FontSize="14" Background="White" Height="30" Width="330">Кузов</TextBox>
+                        <ComboBox Margin="-1, 0, 0, 0" Background="White">
+                            <TextBlock></TextBlock>
+                            <TextBlock></TextBlock>
+                        </ComboBox>
+                    </WrapPanel>
+                    <WrapPanel  Grid.Row="3" Height="45" Margin="0,10,0,5">
+                        <TextBox Margin="15, 0, 0, 0" Padding="5, 6, 0, 0" FontFamily="Verdana"
+                                 FontSize="14" Background="White" Height="30" Width="330">Год</TextBox>
+                        <ComboBox Margin="-1, 0, 0, 0" Background="White">
+                            <TextBlock></TextBlock>
+                            <TextBlock></TextBlock>
+                        </ComboBox>
+                    </WrapPanel>
+                    <StackPanel Height="45" Grid.Row="4">
+                        <Label Margin="60, 5, 0, 0" FontSize="14" FontFamily="Arial" >
+                            Показать</Label>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+    </Grid>
+</Page>

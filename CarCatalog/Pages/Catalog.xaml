@@ -1,0 +1,544 @@
+﻿<Page x:Class="CarCatalog.Pages.Catalog"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarCatalog.Pages"
+      mc:Ignorable="d" 
+      Title="Catalog">
+
+           
+    <Grid ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+        <Label x:Name="lb01" Grid.Row="0" Grid.Column="0" 
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb01_MouseLeftButtonDown">
+                    <Border>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" x:Name="audi" Margin="10,0" HorizontalAlignment="Center" Source="/Images/audi.png"></Image>
+                            <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 AUDI
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+        </Label>
+        <Label x:Name="lb02" Grid.Row="0" Grid.Column="1" 
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb02_MouseLeftButtonDown">
+            <Border>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" x:Name="bmw" Margin="10,0" HorizontalAlignment="Center" Source="/Images/bmw.png"></Image>
+                <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 BMW
+                </TextBlock>
+            </Grid>
+            </Border>
+       </Label>
+        <Label x:Name="lb03" Grid.Row="0" Grid.Column="2"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb03_MouseLeftButtonDown">
+                    <Border >
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="bmwmotor"></Image>
+                            <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 BMW MOTORRAD
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+        </Label>
+        <Label x:Name="lb04" Grid.Row="0" Grid.Column="3"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb04_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="chrysler" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/chrysler.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 CHRYSLER
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb05" Grid.Row="0" Grid.Column="4"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb05_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="citroen" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/citroen.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 CITROEN
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb06" Grid.Row="0" Grid.Column="5"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb06_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="dacia" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/dacia.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 DACIA
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb07" Grid.Row="1" Grid.Column="0"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb07_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="dodge" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/dodge.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 DODGE
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb08" Grid.Row="1" Grid.Column="1"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb08_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="honda" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/honda.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 HONDA
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb09" Grid.Row="1" Grid.Column="2"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb09_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="hyundai" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/hyundai.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 HYUNDAI
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb10" Grid.Row="1" Grid.Column="3"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb10_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="infiniti" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/infiniti.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 INFINITI
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb11" Grid.Row="1" Grid.Column="4"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb11_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="isuzu" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/isuzu.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 ISUZU
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb12" Grid.Row="1" Grid.Column="5"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb12_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="jaguar"></Image>
+                    <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 JAGUAR
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb13" Grid.Row="2" Grid.Column="0"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb13_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="jeep" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/jeep.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 JEEP
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb14" Grid.Row="2" Grid.Column="1"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb14_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="kia" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/kia.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 KIA
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb15" Grid.Row="2" Grid.Column="2"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb15_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="landrover"></Image>
+                    <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 LAND ROVER EUROPE
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb16" Grid.Row="2" Grid.Column="3"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb16_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="lexus" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/lexus.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 LEXUS
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb17" Grid.Row="2" Grid.Column="4"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb17_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="mazda" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/mazda.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 MAZDA
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb18" Grid.Row="2" Grid.Column="5"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb18_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="mersedes" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/mercedes-benz.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 MERCEDES-BENZ
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb19" Grid.Row="3" Grid.Column="0"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb19_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="mini"></Image>
+                    <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 MINI
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb20" Grid.Row="3" Grid.Column="1"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb20_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="mitsubishi" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/mitsubishi.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 MITSUBISHI
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb21" Grid.Row="3" Grid.Column="2"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb21_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="nissan" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/nissan.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 NISSAN
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb22" Grid.Row="3" Grid.Column="3"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb22_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="peugeot" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/peugeot.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 PEUGEOT
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb23" Grid.Row="3" Grid.Column="4"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb23_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="porsche" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/porsche.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 PORSCHE
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb24" Grid.Row="3" Grid.Column="5"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb24_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="ram" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/ram.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 RAM
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb25" Grid.Row="4" Grid.Column="0"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb25_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="renault" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/renault.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 RENAULT
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb26" Grid.Row="4" Grid.Column="1"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb26_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="rollsroyce"></Image>
+                    <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 ROLLS_ROYCE
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb27" Grid.Row="4" Grid.Column="2"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb27_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="seat" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/seat.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 SEAT
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb28" Grid.Row="4" Grid.Column="3"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb28_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="skoda" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/skoda.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 SKODA
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb29" Grid.Row="4" Grid.Column="4"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb29_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="smart" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/smart.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 SMART
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb30" Grid.Row="4" Grid.Column="5"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb30_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="ssangyong" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/ssangyong.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 SSANGYONG
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb31" Grid.Row="5" Grid.Column="0"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb31_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="suzuki" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/suzuki.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 SUZUKI
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb32" Grid.Row="5" Grid.Column="1"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb32_MouseLeftButtonDown">
+            <Border>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="toyota" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/toyota.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 TOYOTA
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </Label>
+        <Label x:Name="lb33" Grid.Row="5" Grid.Column="2"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb33_MouseLeftButtonDown">
+            <Border>
+                <Label VerticalAlignment="Center">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image x:Name="volkswagen" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/volkswagen.png"></Image>
+                        <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 VOLKSWAGEN
+                        </TextBlock>
+                    </Grid>
+                </Label>
+            </Border>
+        </Label>
+        <Label x:Name="lb34" Grid.Row="5" Grid.Column="3"
+               VerticalAlignment="Center" MouseLeftButtonDown="Lb34_MouseLeftButtonDown">
+            <Border>
+                <Label VerticalAlignment="Center">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image x:Name="volvo" Grid.Column="0" Margin="10,0" HorizontalAlignment="Center" Source="/Images/volvo.png"></Image>
+                        <TextBlock Grid.Column="1" Margin="5,0" VerticalAlignment="Center" TextDecorations="Underline">
+                                 VOLVO
+                        </TextBlock>
+                    </Grid>
+                </Label>
+            </Border>
+        </Label>
+
+    </Grid>
+</Page>
